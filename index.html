@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penjumlahan Sederhana</title>
+</head>
+<body>
+  <h1>Program Penjumlahan Sederhana</h1>
+  <label for="angka1">Masukkan Angka 1:</label>
+  <input type="number" id="angka1" placeholder="Angka 1">
+  <br>
+  <label for="angka2">Masukkan Angka 2:</label>
+  <input type="number" id="angka2" placeholder="Angka 2">
+  <br><br>
+  <button onclick="jumlahkan()">Jumlahkan</button>
+
+  <script>
+    function jumlahkan() {
+  // Mengambil nilai dari input angka1 dan angka2
+  var angka1 = parseFloat(document.getElementById('angka1').value);
+  var angka2 = parseFloat(document.getElementById('angka2').value);
+
+
+  // Melakukan penjumlahan
+  var hasil = angka1 + angka2;
+
+  // Menampilkan hasil penjumlahan menggunakan alert
+  alert('Hasil penjumlahan: ' + hasil);
+}
+  </script>
+</body>
+</html>
